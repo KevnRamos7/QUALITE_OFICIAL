@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<div class="row">
+    <div class="col-3 card-emp">
+        <div class="card crd">
+            <div class="card-header">
+                <div>
+                    <a onclick="cerrarModuloEliminarEmp();"><img src="../media/img/x_icon.png" width="30" height="30" alt="alt" class="equis"/></a>
+                </div>
+                <h2 class="text-center">ELIMINAR EMPLEADO(A)</h2>
+                
+                <hr>
+            </div>
+            <div class="card-body cardbody">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <label class="cardlabel">Clave &Uacute;nica:</label>
+                            <input id="txtIdEmpleado" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Nombre:</label>
+                            <input id="txtNombre" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Primer Apellido:</label>
+                            <input id="txtPA" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Segundo Apellido:</label>
+                            <input id="txtSA" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">G&eacute;nero:</label>
+                            <select id="cmbGenero" disabled="" class="inp_modificar" style="width: 50%;">
+                                <option value="m">Masculino</option>
+                                <option value="f">Femenino</option>
+                                <option value="o">Otro</option>
+                            </select>
+                            <br><br>
+                            <label class="cardlabel">Horario:</label>
+                            <input id="txtHorario" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Puesto:</label>
+                            <input id="txtPuesto" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Tel&eacute;fono Casa:</label>
+                            <input id="txtTelCasa" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Tel&eacute;fono M&oacute;vil:</label>
+                            <input id="txtTelMovil" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Correo:</label>
+                            <input id="txtCorreo" disabled="" type="email" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">RFC:</label>
+                            <input id="txtRFC" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Sueldo:</label>
+                            <input id="txtSueldo" disabled="" type="number" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Fecha Inicio:</label>
+                            <input id="txtFI" disabled="" type="date" class="inp_modificar" style="width: 50%;">
+                            <br><br><br>
+                            <div class="text-center">
+                                <button onclick="alertaPreguntarEliminacion();" class="btncancelar"><i class="fas fa-trash fa-1x ms-1"></i>ELIMINAR</button>
+                                <button onclick="cerrarModuloEliminarEmp();" class="btn_cancelar2"><i class=" fas fa-ban fa-1x ms-1"></i>CANCELAR</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
