@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<div class="row">
+    <div class="col-3 card-emp">
+        <div class="card crd">
+            <div class="card-header">
+                <div>
+                    <a onclick="cerrarModuloModificarEmp();"><img src="../media/img/x_icon.png" width="30" height="30" alt="alt" class="equis"/></a>
+                </div>
+                <h2 class="text-center">MODIFICAR EMPLEADO(A)</h2>
+                
+                <hr>
+            </div>
+            <div class="card-body cardbody">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <label class="cardlabel">Clave &Uacute;nica:</label>
+                            <input id="txtIdEmpleado" disabled="" type="text" class="inp_modificar">
+                            <br><br>
+                            <label class="cardlabel">Nombre:</label>
+                            <input id="txtNombre" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Primer Apellido:</label>
+                            <input id="txtPA" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Segundo Apellido:</label>
+                            <input id="txtSA" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">G&eacute;nero:</label>
+                            <select id="cmbGenero" class="inp" style="width: 50%;">
+                                <option value="m">Masculino</option>
+                                <option value="f">Femenino</option>
+                                <option value="o">Otro</option>
+                            </select>
+                            <br><br>
+                            <label class="cardlabel">Horario:</label>
+                            <input id="txtHorario" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Puesto:</label>
+                            <input id="txtPuesto" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Tel&eacute;fono Casa:</label>
+                            <input id="txtTelCasa" type="text" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Tel&eacute;fono M&oacute;vil:</label>
+                            <input id="txtTelMovil" type="text" class="inp" >
+                            <br><br>
+                            <label class="cardlabel">Correo:</label>
+                            <input id="txtCorreo" type="email" class="inp">
+                            <br><br>
+                            <label class="cardlabel">RFC:</label>
+                            <input id="txtRFC" type="text" class="inp" maxlength="10">
+                            <br><br>
+                            <label class="cardlabel">Sueldo:</label>
+                            <input id="txtSueldo" type="number" class="inp">
+                            <br><br>
+                            <label class="cardlabel">Fecha Inicio:</label>
+                            <input id="txtFI" type="date" class="inp" style="width: 50%;">
+                            <br><br><br>
+                            <div class="text-center">
+                                <button onclick="alertaGuardarModificar();" class="btnguardar"><i class=" fas fa-save fa-1x ms-1"></i>GUARDAR</button>
+                            
+                                <button onclick="cerrarModuloModificarEmp()" class="btncancelar"><i class="fas fa-ban fa-1x ms-1"></i>CANCELAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
